@@ -190,3 +190,55 @@ After completing this lab, you will:
 ✅ Apply argparse and OOP to real development workflows
 
 These skills help you build maintainable CLI tools that scale with complexity and support real-world use cases.
+
+### 1. Clone the Repository
+
+```bash
+git clone git@github.com:a-gbatie/course-7-module-7-python-cli-tool-lab.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd course-7-module-7-python-cli-tool-lab
+```
+
+### 3. Install Dependencies
+
+```bash
+pipenv install
+```
+
+## How to Use
+
+The CLI supports two commands:
+
+- `add-task`
+- `complete-task`
+
+### Add a Task
+
+```bash
+pipenv run python -m lib.cli_tool add-task Alice "Submit report"
+```
+
+Expected output:
+
+```text
+📌 Task 'Submit report' added to Alice.
+```
+
+### Complete a Task
+
+```bash
+pipenv run python -m lib.cli_tool complete-task Alice "Submit report"
+```
+
+If the user and task exist in the current Python session:
+
+```text
+✅ Task 'Submit report' completed.
+```
+
+### Screenshot of Completed Tests
+![alt text](image.png)
